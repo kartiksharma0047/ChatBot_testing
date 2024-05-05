@@ -1,0 +1,1018 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: roboto;
+}
+
+/* CSS part */
+
+/* Header CSS*/
+
+header {
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+
+#img1 {
+    height: 1.9rem;
+    width: 9rem;
+}
+
+/* Rule of generality -> i used id in page1 but when i put color in button1 its not changing because id is most prior and when there are 2 id present then sometimes the id in which more elements are inserted then priority become more hence i used class in page1 */
+.page1 {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    flex-wrap: nowrap;
+}
+
+.page1 a {
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.page1 li {
+    padding: 0 1.5rem;
+}
+
+#button1 {
+    background-color: royalblue;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    border-radius: 0.3rem;
+    width: max-content;
+    transition: all 0.4s;
+}
+
+a:hover {
+    color: rgb(119, 119, 119);
+}
+
+#button1:hover {
+    background-color: black;
+}
+
+a:active {
+    color: black;
+}
+
+#button1:active {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    transition: none;
+    background-color: royalblue;
+}
+
+/* Responsiveness for header -> START */
+@media all and (max-width:1240px) {
+    .page1 {
+        flex-wrap: wrap;
+    }
+
+    .page1 a {
+        font-size: 1.1rem;
+    }
+
+    #img1 {
+        height: 1.7rem;
+        width: 8.8rem;
+    }
+
+    .page1 li {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+
+@media all and (max-width:900px) {
+    .page1 a {
+        font-size: 0.9rem;
+    }
+
+    #img1 {
+        height: 1.5rem;
+        width: 8.6rem;
+    }
+
+    .page1 li {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+}
+
+@media all and (max-width:680px) {
+    .page1 {
+        flex-direction: column;
+    }
+
+    .page1 li {
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        text-align: left;
+    }
+
+    #img1 {
+        height: 3rem;
+        width: 13rem;
+    }
+}
+
+/* Responsiveness for header -> END */
+
+/* Section 1 CSS */
+
+#section1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 3rem;
+}
+
+#left1 {
+    text-align: left;
+    margin-top: 5.5rem;
+}
+
+#left1 h1 {
+    font-size: 4rem;
+    max-width: 383px;
+    margin-bottom: 2.5rem;
+}
+
+#left1 p {
+    font-weight: 400;
+    max-width: 472px;
+    font-size: 16px;
+}
+
+#button2 {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.3rem;
+    background-color: royalblue;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.4s;
+}
+
+#img2 {
+    width: 595px;
+    height: 500px;
+}
+
+#button2:hover {
+    background-color: black;
+}
+
+#button2:active {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    transition: none;
+    background-color: royalblue;
+}
+
+/* Responsiveness for section 1 -> START */
+@media all and (max-width:1240px) {
+    #left1 h1 {
+        font-size: 2rem;
+        max-width: 192px;
+    }
+
+    #img2 {
+        width: 555px;
+        height: 445px;
+    }
+
+    #button2 {
+        font-size: 1.3rem;
+    }
+
+    #left p {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width:900px) {
+    #left1 h1 {
+        font-size: 1.3rem;
+        max-width: 125px;
+    }
+
+    #img2 {
+        width: 500px;
+        height: 395px;
+    }
+
+    #button2 {
+        font-size: 0.6rem;
+    }
+
+    #left p {
+        font-size: 4px;
+    }
+}
+
+@media all and (max-width:680px) {
+    #section1 {
+        display: block;
+    }
+
+    #left1 h1 {
+        font-size: 2.5rem;
+        max-width: 493px;
+    }
+
+    #button2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #left1 {
+        margin-bottom: 2rem;
+    }
+
+    #img2 {
+        width: 427px;
+        height: 300px;
+    }
+}
+
+/* Responsiveness for section 1 -> END */
+
+
+/* Section 2 CSS */
+
+#section2 {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 5rem;
+}
+
+#section2 h1 {
+    font-size: 1.6rem;
+}
+
+#list1 {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#img3 {
+    height: 75px;
+    width: 240px;
+}
+
+#img4 {
+    width: 185px;
+}
+
+#img5 {
+    height: 35px;
+    width: 170px;
+}
+
+#img6 {
+    height: 70px;
+    width: 180px;
+}
+
+#img7 {
+    height: 100px;
+    width: 110px;
+}
+
+/* Responsivness for section 2 -> START */
+@media all and (max-width:1240px) {
+    #section2 h1 {
+        font-size: 1.3rem;
+    }
+
+    #img3 {
+        height: 60px;
+        width: 150px;
+    }
+
+    #img4 {
+        width: 140px;
+    }
+
+    #img5 {
+        height: 25px;
+        width: 110px;
+    }
+
+    #img6 {
+        height: 60px;
+        width: 135px;
+    }
+
+    #img7 {
+        height: 70px;
+        width: 80px;
+    }
+}
+
+@media all and (max-width:900px) {
+    #section2 h1 {
+        font-size: 1rem;
+    }
+
+    #img3 {
+        height: 45px;
+        width: 125px;
+    }
+
+    #img4 {
+        width: 110px;
+    }
+
+    #img5 {
+        height: 25px;
+        width: 90px;
+    }
+
+    #img6 {
+        height: 45px;
+        width: 100px;
+    }
+
+    #img7 {
+        height: 55px;
+        width: 65px;
+    }
+}
+
+@media all and (max-width:680px) {
+    #section2 h1 {
+        font-size: 1.3rem;
+    }
+
+    #list1 {
+        flex-wrap: wrap;
+    }
+
+    #img3 {
+        height: 75px;
+        width: 240px;
+    }
+
+    #img4 {
+        width: 185px;
+    }
+
+    #img5 {
+        height: 35px;
+        width: 170px;
+    }
+
+    #img6 {
+        height: 70px;
+        width: 180px;
+    }
+
+    #img7 {
+        height: 100px;
+        width: 110px;
+    }
+}
+
+/* Responsivness for section 2 -> END */
+
+/* Section 3 CSS */
+
+#section3 {
+    text-align: center;
+    margin-top: 7rem;
+    font-weight: 500;
+}
+
+#section3 h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+#page2 {
+    display: flex;
+    align-items: center;
+}
+
+#section3 .box {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 0.5rem;
+    width: 30%;
+    margin: 0 auto;
+    height: 410px;
+    padding: 2rem 0.5rem;
+    max-width: max-content;
+}
+
+.img8 {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+#section3 .box h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#section3 .box h3 {
+    color: rgb(69, 69, 69);
+    margin-bottom: 1rem;
+}
+
+#section3 .box ul {
+    margin-top: 1rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+#section3 .box ul li {
+    color: white;
+    background-color: black;
+    padding: 0.4rem;
+    border-radius: 0.6rem;
+}
+
+#section3 a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(228, 228, 228);
+    position: relative;
+    transition: all 0.3s;
+}
+
+#section3 a i {
+    color: rgb(172, 172, 172);
+    position: absolute;
+    top: 5px;
+    right: 11px;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+#section3 a:hover {
+    background-color: white;
+    transform: scale(1.4);
+}
+
+#section3 a:hover i {
+    color: black;
+}
+
+#section3 a:active {
+    background-color: rgb(70, 70, 70);
+}
+
+#scroll {
+    display: flex;
+    justify-content: center;
+    margin: 0.3rem 0;
+}
+
+#scroll span {
+    margin: 0 0.2rem;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(179, 179, 179);
+    border-radius: 50%;
+}
+
+/* Responsivness for section 3 -> START */
+@media all and (max-width:1240px) {
+    #section3 .box {
+        width: 29%;
+        height: 500px;
+    }
+
+    #section3 .box ul {
+        flex-wrap: wrap;
+    }
+
+    #section3 .box ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+@media all and (max-width:900px) {
+    #page2 {
+        flex-direction: column;
+    }
+
+    #scroll {
+        display: none;
+    }
+
+    #scroll span {
+        display: none;
+    }
+}
+
+/* Responsivness for section 3 -> END */
+
+/* Section 4 CSS */
+
+#section4 {
+    background-image: url(../Img/earthBackground.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: roboto;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+#section4 h1 {
+    font-size: 4rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+#page3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.365);
+    padding: 3rem 0.5rem;
+    margin: 2rem 1rem;
+    height: 350px;
+}
+
+.imgal {
+    width: 120px;
+    height: 70px;
+}
+
+#img11 {
+    width: 80px;
+}
+
+#page3 h3 {
+    font-size: 1.7rem;
+    margin: 2rem 0;
+}
+
+#page3 p {
+    font-size: 1.4rem;
+    max-width: 23rem;
+}
+
+/* Responsivness for Section 4 -> START */
+@media all and (max-width:1240px) {
+    #section4 h1 {
+        font-size: 3rem;
+        padding-top: 8rem;
+        padding-bottom: 3rem;
+    }
+
+    .container {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        height: 280px;
+    }
+
+    .imgal {
+        width: 90px;
+        height: 50px;
+    }
+
+    #img11 {
+        width: 60px;
+    }
+
+    #page3 h3 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #page3 p {
+        font-size: 1rem;
+        max-width: 23rem;
+    }
+}
+
+@media all and (max-width:900px) {
+    #page3 {
+        flex-wrap: wrap;
+    }
+
+    #page3 h3 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin: 1rem auto;
+        height: 200px;
+        max-width: 250px;
+    }
+
+    #page3 p {
+        max-width: 17rem;
+    }
+
+    #section4 h1 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* Responsivness for Section 4 -> END */
+
+/* Section 5 CSS */
+
+#section5 {
+    text-align: center;
+    background-color: #f1f1f1;
+    font-family: roboto;
+    font-weight: 500;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+#section5 h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    max-width: 77%;
+    margin-bottom: 6rem;
+}
+
+#top1,
+#bottom1 {
+    display: flex;
+    margin: 5rem auto;
+    text-align: left;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.img12 {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+}
+
+#section5 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+
+#top1 div,
+#bottom1 div {
+    width: fit-content;
+    margin: 1px auto;
+}
+
+#section5 p {
+    font-weight: 400;
+    max-width: 331px;
+}
+
+/* Responsiveness for Section 5 -> START */
+@media all and (max-width:900px) {
+    #section5 h1 {
+        font-size: 3.3rem;
+        max-width: 95%;
+        margin-bottom: 4rem;
+    }
+
+    #top1,
+    #bottom1 {
+        margin: 1rem auto;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #top1 div,
+    #bottom1 div {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+
+    #section5 p {
+        text-align: left;
+        padding-bottom: 0.5rem;
+    }
+
+    .img12 {
+        margin-bottom: 0rem;
+    }
+}
+
+/* Responsiveness for Section 5 -> END */
+
+/* Section 6 */
+
+#section6 {
+    margin: 4rem auto;
+    font-family: roboto;
+    font-weight: 500;
+    text-align: center;
+}
+
+#section6 h1 {
+    font-size: 4rem;
+}
+
+#page4 {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#img13 {
+    height: 500px;
+    width: 600px;
+}
+
+.side {
+    display: flex;
+    margin-top: 2.6rem;
+}
+
+.side h2 {
+    color: blue;
+    font-size: 5rem;
+    border-radius: 50%;
+    border: 0.6rem solid blue;
+    padding: 5px 30px;
+}
+
+.side1 {
+    text-align: left;
+    margin: 15px 0px 0px 25px;
+}
+
+.side1 h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.side1 p {
+    max-width: 400px;
+}
+
+/* Responsiveness for Section 6 -> START */
+@media all and (max-width:1240px) {
+    #page4 {
+        display: block;
+    }
+
+    #img13 {
+        height: 550px;
+        width: 800px;
+    }
+
+    #left2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }
+
+    .side {
+        margin: 10px auto;
+    }
+
+    .side h2 {
+        color: blue;
+        font-size: 3rem;
+        border-radius: 50%;
+        border: 0.3rem solid blue;
+        padding: 12px 30px;
+    }
+
+    .side1 {
+        text-align: center;
+    }
+
+    .side1 p {
+        max-width: 350px;
+        text-align: left;
+    }
+
+    .side1 h3 {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+}
+
+@media all and (max-width:700px) {
+    #img13 {
+        height: 450px;
+        width: 600px;
+    }
+}
+
+/* Responsiveness for Section 6 -> END */
+
+/* Section 7 CSS */
+
+#section7 {
+    background-color: #5f25f0;
+    font-family: roboto;
+    font-weight: 500;
+    text-align: center;
+    height: 330px;
+    color: white;
+}
+
+#section7 h1 {
+    text-align: center;
+    padding: 5rem 0 3rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    max-width: 45rem;
+}
+
+#section7 div {
+    font-size: 1.8rem;
+}
+
+#link1,
+#link2 {
+    padding: 5px 15px;
+}
+
+#link1 {
+    text-decoration: none;
+    background-color: #4E0FEA;
+    color: white;
+    margin-right: 1.5rem;
+    transition: all 0.5s;
+}
+
+#link2 {
+    text-decoration: none;
+    border: 3px solid white;
+    color: white;
+    margin-left: 1.5rem;
+    transition: all 0.6s;
+}
+
+#section7 div span {
+    font-size: 1.5rem;
+}
+
+#link1:hover {
+    background-color: black;
+    box-shadow: 0 0 5px black, 0.5px 0.5px 0 black;
+}
+
+#link2:hover {
+    border-color: black;
+    color: black;
+}
+
+#link1:active {
+    background-color: #4E0FEA;
+    color: #000;
+    transition: none;
+}
+
+#link2:active {
+    border-color: white;
+    color: white;
+    transition: none;
+}
+
+#section7 div span {
+    display: inline;
+}
+
+/* Responsiveness for Section 7 :- START */
+@media all and (max-width:700px) {
+    #section7 h1 {
+        font-size: 2rem;
+    }
+
+    #section7 div {
+        font-size: 1.4rem;
+    }
+
+    #section7 div span {
+        font-size: 0.9rem;
+    }
+}
+/* Responsiveness for Section 7 :- END */
+
+/* Footer CSS */
+
+#footer{
+    background-color: #4E0FEA;
+    font-family: roboto;
+    font-weight: 500;
+    padding-bottom: 5rem;
+}
+#img12{
+    width: 250px;
+    height: 145px;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s;
+}
+#page5{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    align-items: center;
+}
+#left3{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+    list-style-type: none;
+    align-items: center;
+}
+#left3 a{
+    font-size: 1.7rem;
+    margin: 0 10px;
+}
+#right3{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+    list-style-type: none;
+    align-items: center;
+}
+#right3 a{
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+#page5 a:hover{
+    color: black;
+}
+#page5 a:active i{
+    color: white;
+    transition: none;
+}
+#page5 a:active{
+    color: white;
+    transition: none;
+}
+footer h5{
+    margin-top: 4rem;
+    color: white;
+    font-size: 0.8rem;
+}
+footer p{
+    color: white;
+    font-size: 0.8rem;
+}
+/* Responsiveness for Footer :- STARTS */
+@media all and (max-width:700px){
+    #left3 a{
+        font-size: 1.3rem;
+        margin: 0 10px;
+    }
+    #right3 a{
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+    #img12{
+        width: 170px;
+        height: 105px;
+    }
+}
+/* Responsiveness for Footer :- ENDS */
